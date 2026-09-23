@@ -1,0 +1,9 @@
+{
+  "name": "naffdev-product-engineer",
+  "version": "1.0.0",
+  "description": "Product engineer skill for turning informal or ambiguous requests into PRD, UX/UI design, and responsive implementation.",
+  "author": "naffdev",
+  "skills": [
+    "./skills/"
+  ]
+}

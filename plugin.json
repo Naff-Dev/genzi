@@ -1,0 +1,23 @@
+{
+  "name": "naffdev-product-engineer",
+  "displayName": "naffdev-product-engineer",
+  "version": "1.0.0",
+  "description": "Product engineer skill for turning informal, ambiguous requests into technical requirements (PRD), UX/UI design direction, clean architecture, and responsive implementation.",
+  "author": {
+    "name": "naffdev"
+  },
+  "license": "MIT",
+  "keywords": [
+    "product-engineer",
+    "requirements-engineering",
+    "prd",
+    "antigravity",
+    "agent-skill",
+    "ux-ui",
+    "anti-slop",
+    "responsive-design"
+  ],
+  "skills": [
+    "./skills/naffdev-product-engineer"
+  ]
+}

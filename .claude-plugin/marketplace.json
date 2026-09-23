@@ -1,0 +1,13 @@
+{
+  "name": "naffdev-product-engineer",
+  "plugins": [
+    {
+      "name": "naffdev-product-engineer",
+      "source": {
+        "source": "github",
+        "repo": "naffdev/naffdev-product-engineer"
+      },
+      "description": "Product engineer skill combining requirement analysis, PRD generation, anti-slop UX/UI, and responsive full-stack implementation."
+    }
+  ]
+}

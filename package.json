@@ -1,0 +1,34 @@
+{
+  "name": "naffdev-product-engineer",
+  "version": "1.0.0",
+  "description": "Turn informal or under-specified product requests into clear technical requirements, PRDs, anti-slop UX/UI, and responsive implementation.",
+  "keywords": [
+    "antigravity-skill",
+    "claude-skill",
+    "agent-skill",
+    "product-engineer",
+    "prd-generator",
+    "anti-slop",
+    "responsive-design"
+  ],
+  "homepage": "https://github.com/naffdev/naffdev-product-engineer#readme",
+  "bugs": {
+    "url": "https://github.com/naffdev/naffdev-product-engineer/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/naffdev/naffdev-product-engineer.git"
+  },
+  "author": "naffdev",
+  "license": "MIT",
+  "files": [
+    "skills",
+    "plugin.json",
+    "LICENSE",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "node scripts/validate.js",
+    "validate": "node scripts/validate.js"
+  }
+}
