@@ -111,47 +111,63 @@ DILARANG:
 
 ---
 
-## Cara Menggunakan Genzi
+## Cara Menggunakan & Aktivasi via Prompt
 
-### Copy prompt ini, paste ke agent kamu
+Kamu **tidak wajib install manual**! Cukup copy prompt di bawah ini lalu **paste langsung ke AI coding agent kamu** (Antigravity, Cursor, Claude Code, Windsurf, Copilot, ChatGPT, dll). Agent akan otomatis mengambil dan menjalankan skill Genzi dari repository ini:
 
-```
-Gunakan skill dari repo ini: https://github.com/Naff-Dev/genzi
+### ⚡ Format Cepat (Quick Command)
 
-Baca file skills/genzi/SKILL.md secara penuh sebelum melakukan apapun.
-Ikuti 18-step workflow yang ada di dalamnya - jangan skip langkah apapun.
-Baca juga reference files di skills/genzi/references/ sesuai fase yang sedang dikerjakan.
-
-Task: [tulis kebutuhan kamu di sini]
+```text
+use Naff-Dev/genzi [tulis kebutuhan / task kamu di sini]
 ```
 
----
-
-Contoh penggunaan nyata:
-
+**Contoh:**
+```text
+use Naff-Dev/genzi buatkan landing page untuk aplikasi food delivery lokal, target ibu rumah tangga kota tier 2
 ```
-Gunakan skill dari repo ini: https://github.com/Naff-Dev/genzi
-
-Baca file skills/genzi/SKILL.md secara penuh sebelum melakukan apapun.
-Ikuti 18-step workflow yang ada di dalamnya - jangan skip langkah apapun.
-Baca juga reference files di skills/genzi/references/ sesuai fase yang sedang dikerjakan.
-
-Task: buatkan landing page untuk aplikasi food delivery lokal, target pengguna ibu rumah tangga di kota tier 2
+```text
+use Naff-Dev/genzi build a POS cashier app with daily sales report and inventory tracking
 ```
-
-```
-Gunakan skill dari repo ini: https://github.com/Naff-Dev/genzi
-
-Baca file skills/genzi/SKILL.md secara penuh sebelum melakukan apapun.
-Ikuti 18-step workflow yang ada di dalamnya - jangan skip langkah apapun.
-Baca juga reference files di skills/genzi/references/ sesuai fase yang sedang dikerjakan.
-
-Task: build a POS cashier app with daily sales report and inventory tracking
+```text
+use Naff-Dev/genzi redesign dashboard ini agar lebih visual, bold, dan responsive
 ```
 
 ---
 
-## Instalasi
+### 🚀 Universal Prompt (Paste ke Sembarang Agent / Chat)
+
+> **Copy prompt ini, isi bagian `Task:`, lalu paste ke chat agent kamu:**
+
+```text
+Gunakan skill dari repo ini: https://github.com/Naff-Dev/genzi
+
+Instruksi untuk Agent:
+1. Ambil atau baca skill Genzi dari https://github.com/Naff-Dev/genzi
+2. Baca file skills/genzi/SKILL.md secara penuh sebelum melakukan coding apapun.
+3. Ikuti 18-step workflow yang ada di dalamnya secara lengkap tanpa skip (Requirements Classification, PRD, Bold & Intentional Design dengan HSL spesifik & named fonts, Motion Animation, Architecture, Desktop + Mobile Responsive Verification, dan Self-Review).
+4. Baca referensi pendukung di skills/genzi/references/ sesuai fase yang sedang dikerjakan.
+
+Task: [Tulis kebutuhan aplikasi / website / fitur yang mau kamu buat di sini]
+```
+
+---
+
+### 🎯 Mode Khusus (Desain Saja / Review Saja)
+
+- **Hanya Desain & Visual Direction:**
+  ```text
+  use Naff-Dev/genzi design-only: [deskripsi produk atau fitur]
+  ```
+- **Review Hasil Kode & Desain (Anti-Slop Audit):**
+  ```text
+  use Naff-Dev/genzi review: audit project ini menggunakan checklist skills/genzi/references/review-checklist.md
+  ```
+
+---
+
+## Instalasi Permanen (Opsional)
+
+Jika ingin Genzi selalu aktif di semua sesi tanpa perlu menuliskan URL repo:
 
 ### Option 1: Antigravity / Gemini IDE
 

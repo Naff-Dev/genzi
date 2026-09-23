@@ -10,12 +10,24 @@ This repository contains the `genzi` skill and plugin for Antigravity, Gemini, C
 - **Location**: `skills/genzi/SKILL.md`
 - **Purpose**: Full professional AI partner - Product Manager + Art Director + Senior Engineer + Code Reviewer in one workflow. Turns informal requests into PRD, bold intentional design, motion animations, and responsive implementation.
 
-## Skill Activation Prompt
+## Skill Activation Prompts
 
-Copy and send this prompt to activate the skill manually in any agent:
-
+### Quick Command
 ```
-Use the genzi skill. Read skills/genzi/SKILL.md fully before doing anything. Then follow its complete 18-step workflow including: requirements classification, PRD generation, design direction (with specific HSL colors and named fonts), interaction and animation plan, technical architecture, implementation, responsive verification on desktop and mobile, and self-review using references/review-checklist.md. Do not skip any step.
+use Naff-Dev/genzi [task kamu]
+```
+
+### Universal Copy-Paste Prompt
+```
+Gunakan skill dari repo ini: https://github.com/Naff-Dev/genzi
+
+Instruksi untuk Agent:
+1. Ambil atau baca skill Genzi dari repo https://github.com/Naff-Dev/genzi
+2. Baca file skills/genzi/SKILL.md secara penuh sebelum melakukan apapun.
+3. Ikuti 18-step workflow yang ada di dalamnya secara lengkap: requirements classification, PRD generation, bold design direction (dengan HSL spesifik dan named fonts), interaction and animation plan, technical architecture, implementation, responsive verification on desktop and mobile, dan self-review menggunakan references/review-checklist.md.
+4. Jangan skip langkah apapun.
+
+Task: [tulis task kamu di sini]
 ```
 
 ## Core Rules for Agents

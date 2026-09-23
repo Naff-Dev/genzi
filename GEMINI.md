@@ -6,12 +6,24 @@
 
 Activate the `genzi` skill whenever the user asks to build, design, architect, or add a feature to any web app, mobile app, dashboard, landing page, or software product.
 
-## Skill Activation Prompt
+## Skill Activation Prompts
 
-Copy and send this prompt to activate the skill manually:
-
+### Quick Command
 ```
-Use the genzi skill. Read skills/genzi/SKILL.md fully before doing anything. Follow the complete 18-step workflow: requirements classification, PRD, design direction with specific HSL colors and named fonts, interaction and animation plan, architecture, implementation, responsive verification, and self-review. Do not skip steps.
+use Naff-Dev/genzi [task kamu]
+```
+
+### Universal Copy-Paste Prompt
+```
+Gunakan skill dari repo ini: https://github.com/Naff-Dev/genzi
+
+Instruksi untuk Agent:
+1. Ambil atau baca skill Genzi dari repo https://github.com/Naff-Dev/genzi
+2. Baca file skills/genzi/SKILL.md secara penuh sebelum melakukan apapun.
+3. Ikuti 18-step workflow yang ada di dalamnya secara lengkap: requirements classification, PRD, design direction dengan HSL spesifik dan named fonts, interaction & animation plan, architecture, implementation, responsive verification, dan self-review.
+4. Jangan skip langkah apapun.
+
+Task: [tulis task kamu di sini]
 ```
 
 ## Key Directives

@@ -19,7 +19,7 @@ const jsonFiles = [
   '.claude-plugin/plugin.json',
   '.claude-plugin/marketplace.json',
   '.cursor-plugin/plugin.json',
-  '.agents/plugins/naffdev-product-engineer/plugin.json'
+  '.agents/plugins/genzi/plugin.json'
 ];
 
 jsonFiles.forEach((file) => {
@@ -38,14 +38,14 @@ jsonFiles.forEach((file) => {
 });
 
 // 2. Validate SKILL.md and references
-const skillPath = path.join(__dirname, '..', 'skills', 'naffdev-product-engineer', 'SKILL.md');
+const skillPath = path.join(__dirname, '..', 'skills', 'genzi', 'SKILL.md');
 if (!fs.existsSync(skillPath)) {
-  logFail('Missing SKILL.md in skills/naffdev-product-engineer/');
+  logFail('Missing SKILL.md in skills/genzi/');
 } else {
   const content = fs.readFileSync(skillPath, 'utf8');
   if (!content.startsWith('---')) {
     logFail('SKILL.md must start with YAML frontmatter (---)');
-  } else if (!content.includes('name: naffdev-product-engineer')) {
+  } else if (!content.includes('name: genzi')) {
     logFail('SKILL.md missing name frontmatter');
   } else if (!content.includes('description:')) {
     logFail('SKILL.md missing description frontmatter');
@@ -62,7 +62,7 @@ const requiredReferences = [
 ];
 
 requiredReferences.forEach((ref) => {
-  const refPath = path.join(__dirname, '..', 'skills', 'naffdev-product-engineer', 'references', ref);
+  const refPath = path.join(__dirname, '..', 'skills', 'genzi', 'references', ref);
   if (!fs.existsSync(refPath)) {
     logFail(`Missing reference file: ${ref}`);
   } else {
