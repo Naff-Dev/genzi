@@ -111,44 +111,42 @@ DILARANG:
 
 ---
 
-## Cara Penggunaan - Aktivasi via Prompt
+## Cara Menggunakan Genzi
 
-### Format Prompt (copy langsung, ganti [task] dengan kebutuhan kamu)
-
-**Antigravity / Gemini / Claude / Cursor:**
+### Copy prompt ini, paste ke agent kamu
 
 ```
-use Naff-Dev/genzi [task]
-```
+Gunakan skill dari repo ini: https://github.com/Naff-Dev/genzi
 
-Contoh:
-```
-use Naff-Dev/genzi buatkan landing page untuk aplikasi food delivery
-```
-```
-use Naff-Dev/genzi build a POS cashier app with daily sales report
-```
-```
-use Naff-Dev/genzi redesign dashboard ini biar lebih colorful dan ada animasi
+Baca file skills/genzi/SKILL.md secara penuh sebelum melakukan apapun.
+Ikuti 18-step workflow yang ada di dalamnya - jangan skip langkah apapun.
+Baca juga reference files di skills/genzi/references/ sesuai fase yang sedang dikerjakan.
+
+Task: [tulis kebutuhan kamu di sini]
 ```
 
 ---
 
-**Prompt lengkap jika agent tidak auto-detect:**
+Contoh penggunaan nyata:
 
 ```
-Use the genzi skill from Naff-Dev/genzi. Read skills/genzi/SKILL.md fully before doing anything, then follow the complete 18-step workflow: PRD, design direction (specific HSL colors + named fonts), interaction and animation plan, implementation, responsive verification, and self-review. Task: [task kamu di sini]
+Gunakan skill dari repo ini: https://github.com/Naff-Dev/genzi
+
+Baca file skills/genzi/SKILL.md secara penuh sebelum melakukan apapun.
+Ikuti 18-step workflow yang ada di dalamnya - jangan skip langkah apapun.
+Baca juga reference files di skills/genzi/references/ sesuai fase yang sedang dikerjakan.
+
+Task: buatkan landing page untuk aplikasi food delivery lokal, target pengguna ibu rumah tangga di kota tier 2
 ```
 
----
+```
+Gunakan skill dari repo ini: https://github.com/Naff-Dev/genzi
 
-**Prompt khusus desain / review saja:**
+Baca file skills/genzi/SKILL.md secara penuh sebelum melakukan apapun.
+Ikuti 18-step workflow yang ada di dalamnya - jangan skip langkah apapun.
+Baca juga reference files di skills/genzi/references/ sesuai fase yang sedang dikerjakan.
 
-```
-use Naff-Dev/genzi design-only: [deskripsi produk]
-```
-```
-use Naff-Dev/genzi review: cek hasil implementasi ini pakai review-checklist
+Task: build a POS cashier app with daily sales report and inventory tracking
 ```
 
 ---
