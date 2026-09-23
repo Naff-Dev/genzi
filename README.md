@@ -1,40 +1,53 @@
 # naffdev-product-engineer
 
-> **AI Agent Skill & Plugin for Product Engineering, Requirements Translation, UX/UI Design, and Full-Stack Implementation.**
+> **AI Agent Skill & Plugin - Full Professional Partner for Product Engineering, UX/UI Design, and Implementation.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
 [![Antigravity Skill](https://img.shields.io/badge/Antigravity-Skill%20%26%20Plugin-orange)](https://github.com/Naff-Dev/naffdev-product-engineer)
+[![Gemini Ready](https://img.shields.io/badge/Gemini-Ready-blue)](https://github.com/Naff-Dev/naffdev-product-engineer)
 [![Claude Plugin](https://img.shields.io/badge/Claude-Plugin%20Compatible-purple)](https://github.com/Naff-Dev/naffdev-product-engineer)
 [![Cursor Ready](https://img.shields.io/badge/Cursor-Ready-blue)](https://github.com/Naff-Dev/naffdev-product-engineer)
 
 ---
 
-## 🎯 Overview / Gambaran Umum
+## Gambaran Umum
 
-**`naffdev-product-engineer`** adalah translation layer antara apa yang diucapkan oleh user dan apa yang diimplementasikan oleh AI coding agent. Permintaan user seperti *"buatkan website portfolio"*, *"buat aplikasi kasir POS"*, atau *"bikin website keren"* sering kali singkat, ambigu, dan belum menjadi spesifikasi teknis yang lengkap.
+**`naffdev-product-engineer`** adalah skill AI yang berfungsi sebagai **mitra profesional penuh** - bukan sekadar checklist. Skill ini berpikir, membuat keputusan, dan mengeksekusi seperti seorang senior engineer yang sekaligus merangkap sebagai art director.
 
-Skill ini menggabungkan peran **Requirements Analyst, Product Manager, UX/UI Designer, Software Architect, dan Code Reviewer** ke dalam satu alur kerja terstruktur. Agent tidak akan langsung melompat menulis kode serampangan, melainkan menganalisis kebutuhan, membuat PRD (Product Requirement Document), menentukan arah desain anti-slop, memeriksa stack workspace yang ada, memastikan responsivitas desktop dan mobile, serta melakukan self-review ketat sebelum menyelesaikan tugas.
+Skill ini menggabungkan 5 peran sekaligus:
+
+| Peran | Fungsi |
+|---|---|
+| **Product Manager** | Menerjemahkan permintaan ambigu jadi requirement yang jelas. Mendefinisikan scope. |
+| **UX Designer** | Memikirkan user flow, state, feedback, dan cognitive load sebelum coding. |
+| **Art Director** | Membuat keputusan visual yang bold dan intentional. Tidak pernah default ke estetika generik. |
+| **Senior Frontend Engineer** | Menulis kode yang bersih, performant, accessible, dan responsif. |
+| **Code Reviewer** | Melakukan self-review ketat sebelum mendeklarasikan task selesai. |
 
 ```text
-Raw User Request → Intent Understanding → Requirements Engineering → PRD →
-Design Direction → Technical Architecture → Implementation → Verification
+Raw Request -> Intent -> Requirements -> PRD -> Design Direction ->
+Animation Plan -> Architecture -> Implementation -> Verification -> Finalize
 ```
 
 ---
 
-## 🌟 Key Capabilities / Fitur Utama
+## Fitur Utama
 
-- **Intent & Requirements Translation**: Mengklasifikasikan kebutuhan menjadi 4 kategori tegas (Explicit, Inferred, Assumption, Unknown).
-- **Context-Aware PRD Generation**: Menghasilkan PRD yang disesuaikan dengan skala tugas (Micro PRD untuk tugas kecil, Full PRD untuk produk baru).
-- **Workspace & Stack Detection**: Selalu memeriksa project dan stack yang sudah ada (Next.js, Vite, Laravel, Astro, dll) dan memprioritaskan konsistensi kode yang ada.
-- **Anti-Slop Design Principles**: Mencegah layout template generik AI, warna tidak harmonis, font standar kaku, dan animasi berlebihan.
-- **Mandatory Mobile & Desktop Responsive**: Memastikan UI responsif dan teruji di mobile (~360-430px) maupun desktop (1280px+).
-- **Zero Fake Facts**: Melarang pembuatan data statistik palsu, logo klien palsu, atau klaim yang tidak diberikan oleh user.
-- **Multi-Agent Compatibility**: Siap digunakan di Antigravity, Gemini, Claude Code, Cursor, Codex, dan Copilot.
+- **Requirements Translation**: Klasifikasi kebutuhan menjadi 4 kategori (Explicit, Inferred, Assumption, Unknown).
+- **Context-Aware PRD**: PRD yang disesuaikan dengan skala tugas (Micro PRD hingga Full PRD).
+- **Workspace & Stack Detection**: Selalu memeriksa project yang ada, tidak pernah menimpa stack existing.
+- **Bold Design by Default**: Warna saturated, font editorial nyata, layout asimetris - bukan template AI generik.
+- **Real Typography**: Font pairing spesifik (Clash Display, Space Grotesk, Inter, dll) - bukan browser default.
+- **Real Images**: Menggunakan Unsplash CDN URL langsung atau `generate_image` - tidak ada kotak berwarna.
+- **Motion Animation**: Framer Motion dan GSAP diizinkan dan didorong untuk animasi yang sesuai.
+- **Mandatory Hover & Entrance Animations**: Setiap button, card, dan link harus punya animasi.
+- **Mandatory Responsive**: Desktop (~1280px+) dan Mobile (~360px) diverifikasi - hard blocker.
+- **Zero Fake Facts**: Tidak ada statistik palsu, logo klien palsu, atau klaim yang tidak diberikan user.
+- **Multi-Agent Compatible**: Antigravity, Gemini, Claude Code, Cursor, Codex, Copilot.
 
 ---
 
-## 🔄 18-Step Workflow
+## 18-Step Workflow
 
 ```text
 1.  Interpret User Request
@@ -42,83 +55,97 @@ Design Direction → Technical Architecture → Implementation → Verification
 3.  Inspect Workspace
 4.  Detect Existing Project
 5.  Detect Existing Technology Stack
-6.  Detect Existing Structure / Assets / Components
+6.  Detect Existing Structure / Assets / Components / Design System
 7.  Decide: Extend Existing vs Create New
 8.  Normalize Requirements (Explicit / Inferred / Assumption / Unknown)
 9.  Generate PRD (Micro or Full)
-10. Define Design Direction (context-aware, anti-slop)
-11. Define Interaction / Animation
+10. Define Design Direction
+        - Color palette (specific HSL values)
+        - Font pairing (specific font names)
+        - Layout composition (custom per product, not a template)
+        - Image strategy (Unsplash CDN, generate_image, or existing)
+11. Define Interaction & Motion Plan
+        - Hover animations per element type
+        - Entrance animations (IntersectionObserver / Framer Motion)
+        - Click/press feedback, form states
+        - Technology choice: CSS / Framer Motion / GSAP
 12. Define Technical Architecture
-13. Define Acceptance Criteria (including responsive criteria)
+13. Define Acceptance Criteria (responsive criteria mandatory)
 14. Implement
-15. Verify (desktop AND mobile)
-16. Self-review
-17. Fix Issues
-18. Finalize
+15. Verify (desktop AND mobile, all interactive states)
+16. Self-review (references/review-checklist.md)
+17. Fix ALL issues found
+18. Finalize (no TODOs, no fake content, no lorem ipsum)
 ```
 
 ### Workflow Scaling
 
 | Task Size | Contoh | Tipe PRD | Langkah Wajib |
 |---|---|---|---|
-| **Trivial** | Ganti warna tombol, perbaiki typo, edit teks | Tidak perlu PRD | Cek workspace, langsung implementasi |
-| **Small** | Tambah 1 komponen/field, perbaiki bug, 1 endpoint | Micro PRD (3-5 baris) | Langkah 1, 3-7, 9 (micro), 14-16 |
-| **Medium** | Fitur baru dengan multi-state/halaman, integrasi baru | Micro / Full PRD ringkas | Semua langkah (kondensasi) |
-| **Large** | Produk baru, aplikasi multi-halaman, perombakan besar | Full PRD lengkap | Semua 18 langkah secara penuh |
+| **Trivial** | Ganti warna tombol, perbaiki typo | Tidak perlu PRD | Cek workspace, langsung implementasi |
+| **Small** | Tambah 1 komponen, perbaiki bug | Micro PRD (3-5 baris) | Langkah 1, 3-7, 9, 14-16 |
+| **Medium** | Fitur baru multi-state, integrasi baru | Micro / Full PRD ringkas | Semua langkah (kondensasi) |
+| **Large** | Produk baru, aplikasi multi-halaman | Full PRD lengkap | Semua 18 langkah secara penuh |
 
 ---
 
-## 📁 Repository Structure
+## Design Quality Hard Rules
+
+Skill ini memperlakukan kualitas desain sebagai **hard blocker** - sama pentingnya dengan responsivitas. Output yang gagal pada hal-hal berikut dianggap belum selesai:
 
 ```text
-naffdev-product-engineer/
-├── .agents/
-│   └── plugins/
-│       └── naffdev-product-engineer/
-│           ├── plugin.json
-│           └── skills/
-│               └── naffdev-product-engineer/
-│                   ├── SKILL.md
-│                   └── references/
-│                       ├── design-guidelines.md
-│                       ├── prd-template.md
-│                       ├── review-checklist.md
-│                       └── workspace-detection.md
-├── .claude-plugin/
-│   ├── marketplace.json
-│   └── plugin.json
-├── .cursor-plugin/
-│   └── plugin.json
-├── .github/
-│   └── workflows/
-│       └── validate-skill.yml
-├── skills/
-│   └── naffdev-product-engineer/
-│       ├── SKILL.md
-│       └── references/
-│           ├── design-guidelines.md
-│           ├── prd-template.md
-│           ├── review-checklist.md
-│           └── workspace-detection.md
-├── scripts/
-│   └── validate.js
-├── .gitignore
-├── AGENTS.md
-├── GEMINI.md
-├── LICENSE
-├── package.json
-├── plugin.json
-└── README.md
+WAJIB ADA:
+- Font nyata yang di-import (bukan Times New Roman / Arial / browser default)
+- Warna primary yang saturated dan intentional (bukan gray-on-gray)
+- Hover animation pada setiap button, card, link, dan nav item
+- Entrance animation pada section/elemen utama
+- Gambar nyata (Unsplash CDN atau generate_image) di section visual
+
+DILARANG:
+- Dark/hitam sebagai default tanpa alasan product-specific atau permintaan user
+- Purple-to-blue gradient sebagai identitas utama (AI cliche)
+- Interface yang sepenuhnya statis (zero hover states)
+- Placeholder kotak berwarna solid menggantikan gambar
+- Layout generic: hero besar + 3 kartu fitur + CTA = selalu
 ```
 
 ---
 
-## 🚀 Installation & Setup / Cara Pemasangan
+## Cara Penggunaan - Aktivasi via Prompt
+
+### Prompt Aktivasi Penuh (Recommended)
+
+Kirimkan prompt berikut ke agent untuk mengaktifkan skill secara eksplisit:
+
+```
+Use the naffdev-product-engineer skill. Read skills/naffdev-product-engineer/SKILL.md fully before doing anything. Follow the complete 18-step workflow: requirements classification, PRD generation, design direction with specific HSL colors and named fonts, interaction and animation plan, technical architecture, implementation, responsive verification on desktop and mobile, and self-review using references/review-checklist.md. Do not skip any step.
+```
+
+### Prompt Singkat (untuk task cepat)
+
+```
+Gunakan skill naffdev-product-engineer. Baca SKILL.md dulu, lalu ikuti workflownya untuk task ini.
+```
+
+### Prompt Khusus Desain Saja
+
+```
+Gunakan design-guidelines dari naffdev-product-engineer. Pastikan: warna primary saturated (bukan gray), font nyata dari Google Fonts, hover animation pada semua elemen interaktif, entrance animation pada section utama, dan gambar dari Unsplash CDN. Tidak boleh dark mode kecuali diminta.
+```
+
+### Prompt Khusus Verifikasi / Review
+
+```
+Jalankan self-review menggunakan references/review-checklist.md dari skill naffdev-product-engineer. Cek semua kategori: Product, Design (font nyata, warna, animasi), Interaction, Responsive (mobile + desktop), Code, Accessibility, dan Requirements.
+```
+
+---
+
+## Instalasi
 
 ### Option 1: Antigravity / Gemini IDE
 
-#### A. Global Installation (Tersedia untuk semua project di komputer)
-Clone repository ini ke dalam folder konfigurasi global Antigravity:
+#### A. Global (tersedia di semua project)
 
 ```bash
 # Windows PowerShell
@@ -128,64 +155,93 @@ git clone https://github.com/Naff-Dev/naffdev-product-engineer.git "$HOME\.gemin
 git clone https://github.com/Naff-Dev/naffdev-product-engineer.git ~/.gemini/config/plugins/naffdev-product-engineer
 ```
 
-#### B. Project-Specific Installation (Hanya untuk project tertentu)
-Clone ke dalam folder `.agents/plugins/` di root project Anda:
+#### B. Per-Project (hanya untuk project tertentu)
 
 ```bash
 git clone https://github.com/Naff-Dev/naffdev-product-engineer.git .agents/plugins/naffdev-product-engineer
 ```
 
+Setelah install, skill langsung aktif. Gunakan salah satu prompt di atas untuk memicunya.
+
 ---
 
 ### Option 2: Claude Code / Claude Desktop
 
-Gunakan format Claude plugin langsung dari repository:
-
 ```bash
-# Tambahkan plugin melalui Claude CLI
 claude plugin add Naff-Dev/naffdev-product-engineer
 ```
 
-Atau letakkan di direktori plugin lokal Claude.
+Atau clone ke direktori plugin lokal Claude, lalu gunakan prompt aktivasi di atas.
 
 ---
 
 ### Option 3: Cursor / Windsurf / Codex
 
-Clone repository ini ke folder `.cursorrules` atau masukkan folder `skills/` ke root workspace Anda:
-
 ```bash
 git clone https://github.com/Naff-Dev/naffdev-product-engineer.git .cursor/skills/naffdev-product-engineer
 ```
 
----
-
-## 📖 Reference Documentation
-
-Skill ini menyertakan panduan referensi terperinci yang dibaca secara on-demand oleh agent:
-
-1. [Workspace Detection & Stack Decision](skills/naffdev-product-engineer/references/workspace-detection.md): Matriks deteksi framework, package manager, dan aturan extend vs new project.
-2. [PRD Template Guide](skills/naffdev-product-engineer/references/prd-template.md): Template lengkap Micro PRD dan Full PRD beserta contoh praktis.
-3. [Design Guidelines & Anti-Slop](skills/naffdev-product-engineer/references/design-guidelines.md): Panduan arah desain per tipe produk, aturan animasi, tipografi, dan larangan pola template generik.
-4. [Review Checklist](skills/naffdev-product-engineer/references/review-checklist.md): Daftar periksa mandiri sebelum menyelesaikan task (responsivitas, performa, aksesibilitas, fungsionalitas).
+Masukkan isi `AGENTS.md` ke dalam `.cursorrules` Anda, atau sertakan prompt aktivasi di awal chat.
 
 ---
 
-## 💡 Example Trigger Prompts
+### Option 4: Copilot / GitHub Models
 
-Agent akan otomatis mengaktifkan skill ini saat mendeteksi prompt seperti:
-
-- *"Buatkan landing page untuk produk SaaS B2B saya"*
-- *"Bikin website portofolio developer yang modern dan clean"*
-- *"Tolong buatkan aplikasi kasir POS sederhana"*
-- *"Tambahkan fitur export PDF pada laporan transaksi"*
-- *"Make a cool dashboard for monitoring IoT sensors"*
+Salin isi `AGENTS.md` ke dalam system prompt atau `copilot-instructions.md` di `.github/` folder project Anda.
 
 ---
 
-## 🧪 Validation & Testing
+## Struktur Repository
 
-Repository ini dilengkapi skrip validasi otomatis untuk memverifikasi integritas manifest dan referensi markdown:
+```text
+naffdev-product-engineer/
+├── skills/
+│   └── naffdev-product-engineer/
+│       ├── SKILL.md                    <- Instruksi utama 18-step workflow
+│       └── references/
+│           ├── design-guidelines.md   <- Color, typography, animation, anti-slop
+│           ├── prd-template.md        <- Template Micro PRD dan Full PRD
+│           ├── review-checklist.md    <- Self-review checklist (3 hard blockers)
+│           └── workspace-detection.md <- Stack detection & extend-vs-new matrix
+├── .agents/
+│   └── plugins/
+│       └── naffdev-product-engineer/  <- Auto-detected by Antigravity/Gemini
+│           ├── plugin.json
+│           └── skills/ -> (mirrors skills/)
+├── AGENTS.md                          <- Rules untuk semua agent + activation prompt
+├── GEMINI.md                          <- Rules khusus Antigravity/Gemini
+├── plugin.json
+├── package.json
+└── README.md
+```
+
+---
+
+## Referensi Dokumentasi
+
+1. [SKILL.md](skills/naffdev-product-engineer/SKILL.md) - Instruksi utama workflow lengkap
+2. [design-guidelines.md](skills/naffdev-product-engineer/references/design-guidelines.md) - Color system, typography, animation playbook, asset rules
+3. [prd-template.md](skills/naffdev-product-engineer/references/prd-template.md) - Template Micro PRD dan Full PRD
+4. [review-checklist.md](skills/naffdev-product-engineer/references/review-checklist.md) - Self-review checklist dengan 3 hard blockers
+5. [workspace-detection.md](skills/naffdev-product-engineer/references/workspace-detection.md) - Framework detection & stack decision matrix
+
+---
+
+## Contoh Prompt yang Akan Mengaktifkan Skill Ini
+
+Agent akan otomatis menggunakan skill ini saat mendeteksi:
+
+- *"Buatkan landing page untuk startup SaaS saya"*
+- *"Bikin website portfolio developer yang modern"*
+- *"Tolong buatkan aplikasi kasir POS"*
+- *"Tambahkan fitur export PDF pada laporan"*
+- *"Redesign halaman dashboard ini biar lebih bagus"*
+- *"Make a booking app for a travel agency"*
+- *"Build a product page for my e-commerce"*
+
+---
+
+## Validasi
 
 ```bash
 npm run validate
@@ -193,6 +249,9 @@ npm run validate
 
 ---
 
-## 📄 License
+## Lisensi
 
 Distribusi di bawah lisensi [MIT](LICENSE). Hak Cipta (c) 2026 **naffdev**.
+
+
+
