@@ -1,13 +1,13 @@
 {
-  "name": "naffdev-product-engineer",
+  "name": "genzi",
   "plugins": [
     {
-      "name": "naffdev-product-engineer",
+      "name": "genzi",
       "source": {
         "source": "github",
-        "repo": "Naff-Dev/naffdev-product-engineer"
+        "repo": "Naff-Dev/genzi"
       },
-      "description": "Product engineer skill combining requirement analysis, PRD generation, anti-slop UX/UI, and responsive full-stack implementation."
+      "description": "Genzi adalah koentji. Full professional AI partner combining requirement analysis, PRD generation, bold UX/UI design, motion animation, and responsive full-stack implementation."
     }
   ]
 }

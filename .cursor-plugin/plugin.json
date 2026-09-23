@@ -1,8 +1,9 @@
 {
-  "name": "naffdev-product-engineer",
-  "version": "1.0.0",
-  "description": "Product engineer skill for turning informal or ambiguous requests into PRD, UX/UI design, and responsive implementation.",
+  "name": "genzi",
+  "version": "2.0.0",
+  "description": "Genzi adalah koentji. Full professional AI partner: PM + Art Director + Senior Engineer + Code Reviewer. Turns informal requests into PRD, bold design, motion animations, and responsive implementation.",
   "author": "naffdev",
+  "repository": "https://github.com/Naff-Dev/genzi",
   "skills": [
     "./skills/"
   ]

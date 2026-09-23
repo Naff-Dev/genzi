@@ -1,11 +1,11 @@
 ---
-name: naffdev-product-engineer
-description: Turn informal, short, ambiguous, or under-specified product requests (e.g. "build me a portfolio website", "build a POS app", "make a cool website", "add this feature") into a clear technical requirement before writing any code, then design and implement the product against that requirement. MUST be used for any request about creating, building, designing, or adding a feature to an app/website/software product, including when the user does not mention a tech stack, target users, or gives only a single short sentence. This skill combines the roles of requirement analyst, product manager, UX/UI designer, art director, software architect, and senior code reviewer into one complete workflow. Do not jump straight to code for an under-specified product request, use this skill first.
+name: genzi
+description: Genzi adalah koentji. Turn informal, short, ambiguous, or under-specified product requests into a clear requirement, bold intentional design, and fully responsive implementation. Combines Product Manager + Art Director + Senior Engineer + Code Reviewer into one complete 18-step workflow. MUST be used for any request about creating, building, designing, or adding a feature to any app, website, or software product.
 ---
 
-# naffdev-product-engineer
+# Genzi
 
-This skill is a complete professional partner. It is not a checklist follower. It thinks, makes decisions, and executes like a senior engineer who is also an art director.
+**Genzi adalah koentji.** This skill is a complete professional partner - not a checklist follower. It thinks, makes decisions, and executes like a senior engineer who is also an art director.
 
 The user's sentence is NOT a technical spec. It is the starting point for understanding the outcome the user actually wants. The job is to translate raw intent into a real, professional product - beautiful, functional, technically sound, and genuinely finished.
 
@@ -117,7 +117,7 @@ Before writing anything, answer internally:
 - Is this a **new product** or a **modification/addition** to something that already exists?
 - What **visual benchmark** products exist in this space? (think: what does a great version of this look like?)
 
-The product type drives design priorities and PRD structure. Read `references/design-guidelines.md`, section 0 and section 1, before moving to the design step.
+The product type drives design priorities and PRD structure. Read `references/design-guidelines.md`, section 0 and section 1, before moving to the design step. (path: `skills/genzi/references/design-guidelines.md`)
 
 ---
 
@@ -125,7 +125,7 @@ The product type drives design priorities and PRD structure. Read `references/de
 
 **Hard rule: never create a new project before inspecting the existing workspace.**
 
-Read `references/workspace-detection.md` for the full checklist of files/folders to check and how to read the signals (package manager, framework, styling system, routing, etc).
+Read `references/workspace-detection.md` for the full checklist of files/folders to check and how to read the signals (package manager, framework, styling system, routing, etc). (path: `skills/genzi/references/workspace-detection.md`)
 
 Decision summary:
 
@@ -160,7 +160,7 @@ Write down (as internal notes before the PRD, or directly inside the PRD) the re
 
 ## Step 9: PRD Generation
 
-Read `references/prd-template.md` for the full Micro PRD and Full PRD templates with filled examples.
+Read `references/prd-template.md` for the full Micro PRD and Full PRD templates with filled examples. (path: `skills/genzi/references/prd-template.md`)
 
 Rules:
 - The PRD scale must match the task size (see "Scaling the Workflow" table).
@@ -351,8 +351,10 @@ If the review finds an issue: **Fix -> Review again**, never mark done first.
 
 ## Reference Files
 
+All references are relative to `skills/genzi/references/`:
+
 - `references/workspace-detection.md` - workspace detection checklist, stack decision matrix.
 - `references/prd-template.md` - full Micro PRD and Full PRD templates with examples.
 - `references/design-guidelines.md` - full design system: philosophy, color, typography, animation, layout, anti-slop checklist, asset sources.
-- `references/review-checklist.md` - full self-review checklist by category.
+- `references/review-checklist.md` - full self-review checklist by category (3 hard blockers: Responsive, Design, Interaction).
 

@@ -1,23 +1,26 @@
 {
-  "name": "naffdev-product-engineer",
-  "version": "1.0.0",
-  "description": "Turn informal or under-specified product requests into clear technical requirements, PRDs, anti-slop UX/UI, and responsive implementation.",
+  "name": "genzi",
+  "version": "2.0.0",
+  "description": "Genzi adalah koentji. Full professional AI partner: Product Manager + Art Director + Senior Engineer + Code Reviewer. Turns informal requests into PRD, bold design, motion animations, and responsive implementation.",
   "keywords": [
+    "genzi",
     "antigravity-skill",
     "claude-skill",
     "agent-skill",
     "product-engineer",
+    "art-director",
     "prd-generator",
     "anti-slop",
+    "motion-animation",
     "responsive-design"
   ],
-  "homepage": "https://github.com/Naff-Dev/naffdev-product-engineer#readme",
+  "homepage": "https://github.com/Naff-Dev/genzi#readme",
   "bugs": {
-    "url": "https://github.com/Naff-Dev/naffdev-product-engineer/issues"
+    "url": "https://github.com/Naff-Dev/genzi/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Naff-Dev/naffdev-product-engineer.git"
+    "url": "https://github.com/Naff-Dev/genzi.git"
   },
   "author": "naffdev",
   "license": "MIT",

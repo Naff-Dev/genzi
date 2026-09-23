@@ -1,20 +1,20 @@
-# naffdev-product-engineer
+# Genzi
 
-> **AI Agent Skill & Plugin - Full Professional Partner for Product Engineering, UX/UI Design, and Implementation.**
+> **Genzi adalah koentji. Full Professional AI Partner for Product Engineering, UX/UI Design, and Implementation.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Antigravity Skill](https://img.shields.io/badge/Antigravity-Skill%20%26%20Plugin-orange)](https://github.com/Naff-Dev/naffdev-product-engineer)
-[![Gemini Ready](https://img.shields.io/badge/Gemini-Ready-blue)](https://github.com/Naff-Dev/naffdev-product-engineer)
-[![Claude Plugin](https://img.shields.io/badge/Claude-Plugin%20Compatible-purple)](https://github.com/Naff-Dev/naffdev-product-engineer)
-[![Cursor Ready](https://img.shields.io/badge/Cursor-Ready-blue)](https://github.com/Naff-Dev/naffdev-product-engineer)
+[![Antigravity Skill](https://img.shields.io/badge/Antigravity-Skill%20%26%20Plugin-orange)](https://github.com/Naff-Dev/genzi)
+[![Gemini Ready](https://img.shields.io/badge/Gemini-Ready-blue)](https://github.com/Naff-Dev/genzi)
+[![Claude Plugin](https://img.shields.io/badge/Claude-Plugin%20Compatible-purple)](https://github.com/Naff-Dev/genzi)
+[![Cursor Ready](https://img.shields.io/badge/Cursor-Ready-blue)](https://github.com/Naff-Dev/genzi)
 
 ---
 
-## Gambaran Umum
+## Genzi adalah koentji.
 
-**`naffdev-product-engineer`** adalah skill AI yang berfungsi sebagai **mitra profesional penuh** - bukan sekadar checklist. Skill ini berpikir, membuat keputusan, dan mengeksekusi seperti seorang senior engineer yang sekaligus merangkap sebagai art director.
+**Genzi** adalah skill AI yang berfungsi sebagai **mitra profesional penuh** - bukan sekadar checklist. Genzi berpikir, membuat keputusan, dan mengeksekusi seperti seorang senior engineer yang sekaligus merangkap sebagai art director.
 
-Skill ini menggabungkan 5 peran sekaligus:
+Genzi menggabungkan 5 peran sekaligus:
 
 | Peran | Fungsi |
 |---|---|
@@ -39,7 +39,7 @@ Animation Plan -> Architecture -> Implementation -> Verification -> Finalize
 - **Bold Design by Default**: Warna saturated, font editorial nyata, layout asimetris - bukan template AI generik.
 - **Real Typography**: Font pairing spesifik (Clash Display, Space Grotesk, Inter, dll) - bukan browser default.
 - **Real Images**: Menggunakan Unsplash CDN URL langsung atau `generate_image` - tidak ada kotak berwarna.
-- **Motion Animation**: Framer Motion dan GSAP diizinkan dan didorong untuk animasi yang sesuai.
+- **Motion Animation**: Framer Motion dan GSAP diizinkan dan didorong untuk animasi yang kompleks.
 - **Mandatory Hover & Entrance Animations**: Setiap button, card, dan link harus punya animasi.
 - **Mandatory Responsive**: Desktop (~1280px+) dan Mobile (~360px) diverifikasi - hard blocker.
 - **Zero Fake Facts**: Tidak ada statistik palsu, logo klien palsu, atau klaim yang tidak diberikan user.
@@ -60,20 +60,20 @@ Animation Plan -> Architecture -> Implementation -> Verification -> Finalize
 8.  Normalize Requirements (Explicit / Inferred / Assumption / Unknown)
 9.  Generate PRD (Micro or Full)
 10. Define Design Direction
-        - Color palette (specific HSL values)
-        - Font pairing (specific font names)
-        - Layout composition (custom per product, not a template)
+        - Color palette (specific HSL values, NOT "blue" or "orange")
+        - Font pairing (specific font names: Space Grotesk, Inter, etc)
+        - Layout composition (custom per product, NOT a template)
         - Image strategy (Unsplash CDN, generate_image, or existing)
 11. Define Interaction & Motion Plan
-        - Hover animations per element type
-        - Entrance animations (IntersectionObserver / Framer Motion)
-        - Click/press feedback, form states
-        - Technology choice: CSS / Framer Motion / GSAP
+        - Hover animations per element type (button, card, link, nav)
+        - Entrance animations (IntersectionObserver / Framer Motion whileInView)
+        - Click/press feedback, form states (loading, success, error)
+        - Technology: CSS / Framer Motion / GSAP
 12. Define Technical Architecture
 13. Define Acceptance Criteria (responsive criteria mandatory)
 14. Implement
 15. Verify (desktop AND mobile, all interactive states)
-16. Self-review (references/review-checklist.md)
+16. Self-review (references/review-checklist.md - 3 hard blockers)
 17. Fix ALL issues found
 18. Finalize (no TODOs, no fake content, no lorem ipsum)
 ```
@@ -91,14 +91,14 @@ Animation Plan -> Architecture -> Implementation -> Verification -> Finalize
 
 ## Design Quality Hard Rules
 
-Skill ini memperlakukan kualitas desain sebagai **hard blocker** - sama pentingnya dengan responsivitas. Output yang gagal pada hal-hal berikut dianggap belum selesai:
+Genzi memperlakukan kualitas desain sebagai **hard blocker** - sama pentingnya dengan responsivitas. Output yang gagal di bawah ini dianggap **belum selesai**:
 
 ```text
 WAJIB ADA:
 - Font nyata yang di-import (bukan Times New Roman / Arial / browser default)
 - Warna primary yang saturated dan intentional (bukan gray-on-gray)
 - Hover animation pada setiap button, card, link, dan nav item
-- Entrance animation pada section/elemen utama
+- Entrance animation pada section/elemen utama (scroll-triggered)
 - Gambar nyata (Unsplash CDN atau generate_image) di section visual
 
 DILARANG:
@@ -106,37 +106,49 @@ DILARANG:
 - Purple-to-blue gradient sebagai identitas utama (AI cliche)
 - Interface yang sepenuhnya statis (zero hover states)
 - Placeholder kotak berwarna solid menggantikan gambar
-- Layout generic: hero besar + 3 kartu fitur + CTA = selalu
+- Layout generic: centered hero + 3 equal feature cards + CTA (always)
 ```
 
 ---
 
 ## Cara Penggunaan - Aktivasi via Prompt
 
-### Prompt Aktivasi Penuh (Recommended)
+### Format Prompt (copy langsung, ganti [task] dengan kebutuhan kamu)
 
-Kirimkan prompt berikut ke agent untuk mengaktifkan skill secara eksplisit:
-
-```
-Use the naffdev-product-engineer skill. Read skills/naffdev-product-engineer/SKILL.md fully before doing anything. Follow the complete 18-step workflow: requirements classification, PRD generation, design direction with specific HSL colors and named fonts, interaction and animation plan, technical architecture, implementation, responsive verification on desktop and mobile, and self-review using references/review-checklist.md. Do not skip any step.
-```
-
-### Prompt Singkat (untuk task cepat)
+**Antigravity / Gemini / Claude / Cursor:**
 
 ```
-Gunakan skill naffdev-product-engineer. Baca SKILL.md dulu, lalu ikuti workflownya untuk task ini.
+use Naff-Dev/genzi [task]
 ```
 
-### Prompt Khusus Desain Saja
+Contoh:
+```
+use Naff-Dev/genzi buatkan landing page untuk aplikasi food delivery
+```
+```
+use Naff-Dev/genzi build a POS cashier app with daily sales report
+```
+```
+use Naff-Dev/genzi redesign dashboard ini biar lebih colorful dan ada animasi
+```
+
+---
+
+**Prompt lengkap jika agent tidak auto-detect:**
 
 ```
-Gunakan design-guidelines dari naffdev-product-engineer. Pastikan: warna primary saturated (bukan gray), font nyata dari Google Fonts, hover animation pada semua elemen interaktif, entrance animation pada section utama, dan gambar dari Unsplash CDN. Tidak boleh dark mode kecuali diminta.
+Use the genzi skill from Naff-Dev/genzi. Read skills/genzi/SKILL.md fully before doing anything, then follow the complete 18-step workflow: PRD, design direction (specific HSL colors + named fonts), interaction and animation plan, implementation, responsive verification, and self-review. Task: [task kamu di sini]
 ```
 
-### Prompt Khusus Verifikasi / Review
+---
+
+**Prompt khusus desain / review saja:**
 
 ```
-Jalankan self-review menggunakan references/review-checklist.md dari skill naffdev-product-engineer. Cek semua kategori: Product, Design (font nyata, warna, animasi), Interaction, Responsive (mobile + desktop), Code, Accessibility, dan Requirements.
+use Naff-Dev/genzi design-only: [deskripsi produk]
+```
+```
+use Naff-Dev/genzi review: cek hasil implementasi ini pakai review-checklist
 ```
 
 ---
@@ -149,16 +161,16 @@ Jalankan self-review menggunakan references/review-checklist.md dari skill naffd
 
 ```bash
 # Windows PowerShell
-git clone https://github.com/Naff-Dev/naffdev-product-engineer.git "$HOME\.gemini\config\plugins\naffdev-product-engineer"
+git clone https://github.com/Naff-Dev/genzi.git "$HOME\.gemini\config\plugins\genzi"
 
 # macOS / Linux
-git clone https://github.com/Naff-Dev/naffdev-product-engineer.git ~/.gemini/config/plugins/naffdev-product-engineer
+git clone https://github.com/Naff-Dev/genzi.git ~/.gemini/config/plugins/genzi
 ```
 
 #### B. Per-Project (hanya untuk project tertentu)
 
 ```bash
-git clone https://github.com/Naff-Dev/naffdev-product-engineer.git .agents/plugins/naffdev-product-engineer
+git clone https://github.com/Naff-Dev/genzi.git .agents/plugins/genzi
 ```
 
 Setelah install, skill langsung aktif. Gunakan salah satu prompt di atas untuk memicunya.
@@ -168,7 +180,7 @@ Setelah install, skill langsung aktif. Gunakan salah satu prompt di atas untuk m
 ### Option 2: Claude Code / Claude Desktop
 
 ```bash
-claude plugin add Naff-Dev/naffdev-product-engineer
+claude plugin add Naff-Dev/genzi
 ```
 
 Atau clone ke direktori plugin lokal Claude, lalu gunakan prompt aktivasi di atas.
@@ -178,7 +190,7 @@ Atau clone ke direktori plugin lokal Claude, lalu gunakan prompt aktivasi di ata
 ### Option 3: Cursor / Windsurf / Codex
 
 ```bash
-git clone https://github.com/Naff-Dev/naffdev-product-engineer.git .cursor/skills/naffdev-product-engineer
+git clone https://github.com/Naff-Dev/genzi.git .cursor/skills/genzi
 ```
 
 Masukkan isi `AGENTS.md` ke dalam `.cursorrules` Anda, atau sertakan prompt aktivasi di awal chat.
@@ -194,20 +206,25 @@ Salin isi `AGENTS.md` ke dalam system prompt atau `copilot-instructions.md` di `
 ## Struktur Repository
 
 ```text
-naffdev-product-engineer/
+genzi/
 ├── skills/
-│   └── naffdev-product-engineer/
+│   └── genzi/
 │       ├── SKILL.md                    <- Instruksi utama 18-step workflow
 │       └── references/
 │           ├── design-guidelines.md   <- Color, typography, animation, anti-slop
 │           ├── prd-template.md        <- Template Micro PRD dan Full PRD
-│           ├── review-checklist.md    <- Self-review checklist (3 hard blockers)
+│           ├── review-checklist.md    <- Self-review (3 hard blockers)
 │           └── workspace-detection.md <- Stack detection & extend-vs-new matrix
 ├── .agents/
 │   └── plugins/
-│       └── naffdev-product-engineer/  <- Auto-detected by Antigravity/Gemini
+│       └── genzi/                     <- Auto-detected by Antigravity/Gemini
 │           ├── plugin.json
-│           └── skills/ -> (mirrors skills/)
+│           └── skills/genzi/          <- Mirror dari skills/genzi/
+├── .claude-plugin/
+│   ├── plugin.json
+│   └── marketplace.json
+├── .cursor-plugin/
+│   └── plugin.json
 ├── AGENTS.md                          <- Rules untuk semua agent + activation prompt
 ├── GEMINI.md                          <- Rules khusus Antigravity/Gemini
 ├── plugin.json
@@ -219,17 +236,17 @@ naffdev-product-engineer/
 
 ## Referensi Dokumentasi
 
-1. [SKILL.md](skills/naffdev-product-engineer/SKILL.md) - Instruksi utama workflow lengkap
-2. [design-guidelines.md](skills/naffdev-product-engineer/references/design-guidelines.md) - Color system, typography, animation playbook, asset rules
-3. [prd-template.md](skills/naffdev-product-engineer/references/prd-template.md) - Template Micro PRD dan Full PRD
-4. [review-checklist.md](skills/naffdev-product-engineer/references/review-checklist.md) - Self-review checklist dengan 3 hard blockers
-5. [workspace-detection.md](skills/naffdev-product-engineer/references/workspace-detection.md) - Framework detection & stack decision matrix
+1. [SKILL.md](skills/genzi/SKILL.md) - Instruksi utama workflow lengkap
+2. [design-guidelines.md](skills/genzi/references/design-guidelines.md) - Color system, typography, animation playbook, asset rules, anti-slop checklist
+3. [prd-template.md](skills/genzi/references/prd-template.md) - Template Micro PRD dan Full PRD
+4. [review-checklist.md](skills/genzi/references/review-checklist.md) - Self-review dengan 3 hard blockers
+5. [workspace-detection.md](skills/genzi/references/workspace-detection.md) - Framework detection & stack decision matrix
 
 ---
 
-## Contoh Prompt yang Akan Mengaktifkan Skill Ini
+## Contoh Trigger Prompts
 
-Agent akan otomatis menggunakan skill ini saat mendeteksi:
+Genzi akan otomatis aktif saat mendeteksi:
 
 - *"Buatkan landing page untuk startup SaaS saya"*
 - *"Bikin website portfolio developer yang modern"*
@@ -252,6 +269,3 @@ npm run validate
 ## Lisensi
 
 Distribusi di bawah lisensi [MIT](LICENSE). Hak Cipta (c) 2026 **naffdev**.
-
-
-
