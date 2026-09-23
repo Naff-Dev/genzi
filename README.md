@@ -3,9 +3,9 @@
 > **AI Agent Skill & Plugin for Product Engineering, Requirements Translation, UX/UI Design, and Full-Stack Implementation.**
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
-[![Antigravity Skill](https://img.shields.io/badge/Antigravity-Skill%20%26%20Plugin-orange)](https://github.com/naffdev/naffdev-product-engineer)
-[![Claude Plugin](https://img.shields.io/badge/Claude-Plugin%20Compatible-purple)](https://github.com/naffdev/naffdev-product-engineer)
-[![Cursor Ready](https://img.shields.io/badge/Cursor-Ready-blue)](https://github.com/naffdev/naffdev-product-engineer)
+[![Antigravity Skill](https://img.shields.io/badge/Antigravity-Skill%20%26%20Plugin-orange)](https://github.com/Naff-Dev/naffdev-product-engineer)
+[![Claude Plugin](https://img.shields.io/badge/Claude-Plugin%20Compatible-purple)](https://github.com/Naff-Dev/naffdev-product-engineer)
+[![Cursor Ready](https://img.shields.io/badge/Cursor-Ready-blue)](https://github.com/Naff-Dev/naffdev-product-engineer)
 
 ---
 
@@ -122,17 +122,17 @@ Clone repository ini ke dalam folder konfigurasi global Antigravity:
 
 ```bash
 # Windows PowerShell
-git clone https://github.com/naffdev/naffdev-product-engineer.git "$HOME\.gemini\config\plugins\naffdev-product-engineer"
+git clone https://github.com/Naff-Dev/naffdev-product-engineer.git "$HOME\.gemini\config\plugins\naffdev-product-engineer"
 
 # macOS / Linux
-git clone https://github.com/naffdev/naffdev-product-engineer.git ~/.gemini/config/plugins/naffdev-product-engineer
+git clone https://github.com/Naff-Dev/naffdev-product-engineer.git ~/.gemini/config/plugins/naffdev-product-engineer
 ```
 
 #### B. Project-Specific Installation (Hanya untuk project tertentu)
 Clone ke dalam folder `.agents/plugins/` di root project Anda:
 
 ```bash
-git clone https://github.com/naffdev/naffdev-product-engineer.git .agents/plugins/naffdev-product-engineer
+git clone https://github.com/Naff-Dev/naffdev-product-engineer.git .agents/plugins/naffdev-product-engineer
 ```
 
 ---
@@ -143,7 +143,7 @@ Gunakan format Claude plugin langsung dari repository:
 
 ```bash
 # Tambahkan plugin melalui Claude CLI
-claude plugin add naffdev/naffdev-product-engineer
+claude plugin add Naff-Dev/naffdev-product-engineer
 ```
 
 Atau letakkan di direktori plugin lokal Claude.
@@ -155,7 +155,7 @@ Atau letakkan di direktori plugin lokal Claude.
 Clone repository ini ke folder `.cursorrules` atau masukkan folder `skills/` ke root workspace Anda:
 
 ```bash
-git clone https://github.com/naffdev/naffdev-product-engineer.git .cursor/skills/naffdev-product-engineer
+git clone https://github.com/Naff-Dev/naffdev-product-engineer.git .cursor/skills/naffdev-product-engineer
 ```
 
 ---

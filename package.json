@@ -11,13 +11,13 @@
     "anti-slop",
     "responsive-design"
   ],
-  "homepage": "https://github.com/naffdev/naffdev-product-engineer#readme",
+  "homepage": "https://github.com/Naff-Dev/naffdev-product-engineer#readme",
   "bugs": {
-    "url": "https://github.com/naffdev/naffdev-product-engineer/issues"
+    "url": "https://github.com/Naff-Dev/naffdev-product-engineer/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/naffdev/naffdev-product-engineer.git"
+    "url": "https://github.com/Naff-Dev/naffdev-product-engineer.git"
   },
   "author": "naffdev",
   "license": "MIT",
